@@ -1,21 +1,17 @@
-import discord, random
+import discord 
 from discord.ext import commands 
+import music 
 
-TOKEN = "MTA3OTg5Njg4MTM5Nzc4MDYwMQ.GT3kqb.OLqOuYVN2no2ApOx2bCbO6nti4N5G4Xebj4Hwg"
+cogs = music 
 
-intents = discord.Intents.default()
-intents.message_content = True
-
-bot = commands.Bot(command_prefix = "$", intents = intents)
-
-@bot.command(name = "roll")
-async def roll(ctx):
-  d = random.randint(1,450)
-  await ctx.channel.send(f"Rolling a D450 : {d}")
+for i in range(len(cogs)):
+    cogs{i}.setup()
   
 
 
 
+client = commands.bot(command_prefix='?', intents = discord.intents.all())
+client.run(MTA3OTg5Njg4MTM5Nzc4MDYwMQ.GBXEnM.teX3wCGwLsk8DIgNi5eG19kkooicUnsVQIo7Lg)
 
 
 
@@ -34,6 +30,4 @@ async def roll(ctx):
 
 
 
-
-
-bot.run(TOKEN)
+bot.run(my_secret)
